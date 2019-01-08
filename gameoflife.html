@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Project 3 </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="gameoflife.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="gameoflife.css">
+</head>
+<body>
+  <div id="header">
+    <h1> Welcome to the Game of Life! </h1>
+    <div id="start" class ="buttons"> <b>START</b> </div>
+  </div>
+
+
+  <div class="hidden" id="key">
+    <h2> Grid Key </h2>
+    <div id="first"><div id ="alive"></div> <p> live cells </p> </div>
+    <div id="second"> <div id="dead"> </div> <p> dead cells </p> </div>
+  </div>
+
+  <div class="hidden" id="genNum">
+    <h2 id="generation"></h2>
+  </div>
+
+  <div class="hidden" id="cellCount">
+      <h2> Cell Count: </h2>
+      <p class ="cells"id="liveCells"></p>
+      <p class ="cells"id="deadCells"></p>
+  </div>
+
+
+
+  <div  class="hidden" id="container">
+    <div id="buttonContainer">
+      <div id="next" class="buttons"> Next Generation</div>
+      <div id="skip23" class="buttons"> Skip 23 Generations</div>
+      <div class="buttons" id="reset"> Reset game </div>
+    </div>
+    <canvas id="myCanvas"></canvas>
+  </div>
+
+</body>
+</html>
